@@ -1,24 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f5ff; /* Fondo claro y suave */
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 10px; /* Espacio alrededor */
 }
 
 .container {
-    background: white;
+    background: white; /* Fondo blanco para el contenido */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Bordes más redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Ancho máximo */
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px; /* Tamaño de fuente */
+    margin-bottom: 20px;
+    color: #007bff; /* Color azul */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px; /* Espaciado interior */
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px;
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+button {
+    background-color: #007bff; /* Color azul */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+#preguntaContainer {
+    margin-top: 20px;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 .hidden {
     display: none;
 }
 
-button {
-    margin-top: 10px;
+/* Estilos Responsivos */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px; /* Ajuste para pantallas pequeñas */
+    }
+
+    button {
+        width: 100%; /* Botones ocupan el ancho completo */
+    }
+
+    input[type="text"] {
+        font-size: 14px; /* Tamaño de fuente más pequeño en móviles */
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 18px; /* Ajuste adicional para pantallas muy pequeñas */
+    }
+
+    input[type="text"] {
+        font-size: 16px; /* Tamaño de fuente más grande en móviles */
+    }
+
+    button {
+        font-size: 14px; /* Tamaño de fuente más pequeño en botones */
+    }
 }
