@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCV: Plant Dates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Introduce tu código</h1>
+        <input type="text" id="codigo" placeholder="Introduce un código de 4 cifras" maxlength="4">
+        <button id="validarCodigo">Validar Código</button>
+        
+        <div id="preguntaContainer" class="hidden">
+            <p id="pregunta"></p>
+            <input type="text" id="respuesta" placeholder="Respuesta (una palabra)">
+            <button id="validarRespuesta">Validar Respuesta</button>
+        </div>
+        
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
