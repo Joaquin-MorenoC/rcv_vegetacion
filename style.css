@@ -30,6 +30,18 @@ h1 {
     color: #007bff; /* Color azul */
 }
 
+h3 {
+    font-size: 20px; /* Tamaño de fuente para la pregunta */
+    margin: 15px 0; /* Espaciado alrededor */
+    color: #333; /* Color del texto */
+}
+
+h2 {
+    font-size: 22px; /* Tamaño de fuente para el código de resultado */
+    margin-top: 20px; /* Espacio arriba */
+    color: #007bff; /* Color azul */
+}
+
 input[type="text"] {
     width: calc(100% - 20px);
     padding: 10px; /* Espaciado interior */
@@ -73,6 +85,14 @@ button:hover {
         font-size: 20px; /* Ajuste para pantallas pequeñas */
     }
 
+    h3 {
+        font-size: 18px; /* Tamaño de fuente para pregunta en móviles */
+    }
+
+    h2 {
+        font-size: 20px; /* Tamaño de fuente para resultado en móviles */
+    }
+
     button {
         width: 100%; /* Botones ocupan el ancho completo */
     }
@@ -85,6 +105,14 @@ button:hover {
 @media (max-width: 400px) {
     h1 {
         font-size: 18px; /* Ajuste adicional para pantallas muy pequeñas */
+    }
+
+    h3 {
+        font-size: 16px; /* Tamaño de fuente más pequeño para pregunta en móviles */
+    }
+
+    h2 {
+        font-size: 18px; /* Tamaño de fuente más pequeño para resultado en móviles */
     }
 
     input[type="text"] {
